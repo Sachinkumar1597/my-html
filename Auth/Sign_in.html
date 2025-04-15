@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <style>
+        body {
+            background: rgb(221, 225, 225);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .card {
+            background-color: white;
+            width: 450px;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 8px 8px 16px grey;
+        }
+
+        h2 {
+            text-align: center;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            color: black;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            margin-top: 2px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            border-radius: 7px;
+            border: 1px solid dimgray;
+        }
+
+        button {
+            width: 100%;
+            margin-top: 5px;
+            padding: 12px;
+            background-color: teal;
+            color: white;
+            font-size: 17px;
+            border-radius: 7px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: darkslategray;
+        }
+
+        p {
+            letter-spacing: 1px;
+            font-size: 17px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>Log In</h2>
+        <form action="">
+            <label for="">Username</label>
+            <input type="text" placeholder="Enter Username" required>
+
+            <label for="">Password </label>
+            <input type="password" placeholder="Enter valid password" required>
+
+            <button type="submit">Sign In</button>
+
+            <p>Don't have an Account? <a href="./Sign_up.html">Register</a> here  <a href="../Navbar/navbar.html">Home</a></p>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <!-- <link rel="stylesheet" href="./index.css"> -->
+
+    <style>
+        .box {
+            border: 2px solid grey;
+            height: 200px;
+            width: 250px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px red;
+            border: none;
+            margin-bottom: 20px;
+        }
+
+        .grand-parent {
+            border: 2px solid blue;
+            padding: 5px;
+            height: 100vh;
+            display: flex;
+            /* flex-direction: column-reverse; */
+            /* flex-direction: row-reverse; */
+            /* justify-content: center; */
+            /* justify-content: space-between; */
+            /* align-items: end; */
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .parents {
+            border: 2px solid green;
+            margin: 10px;
+            width: 150px;
+            height: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Selectors => Used to target HTML elements that you want to style 
+    1. Universal Selectors (*) => Selects all the elements on the page 
+    2. Element Selectors/Tag Selector  => Selects all element of a sepecific HTML tag
+    3. Class selectors (.) => Selects all element of a sepecific class name
+    4. ID Selectors (#) => Selects a specific element with the unique ID
+    5. Group Selectors => Applies the same style to multiple elements
+    -->
+
+    <!-- Types of CSS
+    1. Inline CSS => written directly inside HTML tag
+    2. Internal CSS => written inside style tag in the head
+    3. External CSS => Seperate CSS files using .css
+    -->
+
+    <!-- CSS Box Model
+   1. Content => The actual text or image inside the element
+   2. Padding =>  space around the content and inside border/ padding lies between border and content
+   3. Border => The line that wraps around the padding and content
+   4. Margin => space outside the border, seperating it from other elements
+   -->
+
+    <!-- Shadow Effect-->
+
+    <!-- Flex-box 
+   is a CSS layout model that makes it easy to align, space and distribute elements inside a container
+   even their size is dynamic/unknown
+   works on parent-child Relationship 
+   -->
+
+
+    <h2>Welcome to Krutanic Institute</h2>
+
+    <!-- <div class="box"></div> -->
+
+
+
+    <div class="grand-parent">
+        <div class="parents">
+            <h3>Parent 1</h3>
+        </div>
+        <div class="parents">
+            <h3>Parent 2</h3>
+        </div>
+        <div class="parents">
+            <h3>Parent 3</h3>
+        </div>
+        <div class="parents">
+            <h3>Parent 4</h3>
+        </div>
+
+        <!-- <h2>Welcome to Krutanic Institute</h2> -->
+    </div>
+
+
+
+
+
+</body>
+
+</html>
